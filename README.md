@@ -1,12 +1,26 @@
-# React + Vite
+# Farmer Government Aided Schemes
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This web application is designed to provide farmers with information on government schemes, crop details, and applications. It allows farmers to apply for schemes, track their status, and helps administrators approve/reject applications.
 
-Currently, two official plugins are available:
+## Features
+- **Farmer Dashboard**: View and apply for government schemes.
+- **Admin Dashboard**: Approve/reject farmer scheme applications.
+- **Crop Details**: View details about various crops, including planting seasons and more.
+- **Pesticide/Insecticide Info**: Access detailed info on crop treatments and recommended products.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Technologies Used
+- **Frontend**: React, Redux, Bootstrap
+- **Backend**: Firebase (Authentication, Firestore, Hosting)
+- **Version Control**: Git, GitHub
+- **Deployment**: Firebase Hosting
 
-## Expanding the ESLint configuration
+## Installation Instructions
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Prerequisites
+- **Node.js** (v12 or later)
+- **npm** (comes with Node.js)
+- **Firebase** account
+
+### Clone the Repository
+```bash
+git clone https://github.com/Bluegriphen/farmer-govt-schemes.git
