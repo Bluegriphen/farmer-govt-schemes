@@ -1,0 +1,22 @@
+name: Firebase Hosting Deployment
+
+on:
+  push:
+    branches:
+      - main  # You can change this to your desired branch name
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Set up Firebase CLI
+        uses: wzieba/Firebase-Action@v2
+        with:
+          firebase_token: ${{ secrets.FIREBASE_AUTH_TOKEN }}
+
+      - name: Deploy to Firebase Hosting
+        run: firebase deploy --only hosting
